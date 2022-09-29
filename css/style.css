@@ -10,6 +10,14 @@ img {
     --bs-gray-400: #ced4da;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+.ms-container-small {
+    width: 60%;
+    margin: 0 auto;
+}
 /* HEADER */
 /* Header Top Section */
 .header-top {
@@ -28,6 +36,7 @@ img {
     background-image: url(../img/jumbo-bg.png);
     height: 650px;
     background-position: center;
+    background-size: cover;
 }
 
 .ms-buy-now {
@@ -53,4 +62,28 @@ img {
 
 .ps-logo img {
     max-width: 50%;
+}
+
+/* Playstation Store Section */
+.playstation-now-section {
+    background-color: #161c3b;
+}
+
+.pn-logo img {
+    max-width: 50%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #00439c;
+}
+
+.sony-img {
+    filter: brightness(0) invert(1);
+    width: 150px;
+}
+
+/* Footer Bottom Section */
+.footer-img {
+    max-width: 20%;
 }

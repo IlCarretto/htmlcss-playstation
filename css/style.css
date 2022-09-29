@@ -1,0 +1,20 @@
+/* COMMON */
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+/* Header Top Section */
+.header-top {
+    height: 40px;
+    background-color: black;
+}
+
+.header-top img {
+    width: 100px;
+}
+
+/* Header Bot Section */
+.navbar {
+    width: 100%;
+}

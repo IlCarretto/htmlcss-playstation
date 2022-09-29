@@ -15,6 +15,22 @@ img {
 }
 
 /* Header Bot Section */
-.navbar {
-    width: 100%;
+
+/* Jumbotron Section */
+.jumbotron-section {
+    background-image: url(../img/jumbo-bg.png);
+    height: 650px;
+    background-position: center;
+}
+
+.ms-buy-now {
+    background-color: #cd3d0f;
+}
+
+/* It-Takes-Two-Section */
+.it-takes-two-section {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
 }

@@ -3,6 +3,13 @@ img {
     max-width: 100%;
 }
 
+:root {
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+}
+
 /* HEADER */
 /* Header Top Section */
 .header-top {
@@ -33,4 +40,17 @@ img {
     height: 500px;
     background-position: center;
     background-size: cover;
+}
+
+.takes-two-cover {
+    max-width: 50%;
+}
+
+/* Playstation Plus Section */
+.playstation-plus-section {
+    background-color: var(--bs-gray-400);
+}
+
+.ps-logo img {
+    max-width: 50%;
 }

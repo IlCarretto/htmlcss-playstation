@@ -4,20 +4,29 @@ img {
 }
 
 :root {
+    /* Colors */
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
     --bs-gray-300: #dee2e6;
     --bs-gray-400: #ced4da;
+
+    /* Spacing */
+    --ms_margin-tb: 1rem 0;
+    --ms_padding-tb: 1rem 0;
 }
 
 ul li {
     list-style-type: none;
 }
 
-.ms-container-small {
-    width: 60%;
-    margin: 0 auto;
+.section-title {
+    padding: 2rem 0;
 }
+
+.disabled {
+    opacity: .5;
+}
+
 /* HEADER */
 /* Header Top Section */
 .header-top {
@@ -30,6 +39,9 @@ ul li {
 }
 
 /* Header Bot Section */
+.header-bottom .nav-link {
+    color: black;
+}
 
 /* Jumbotron Section */
 .jumbotron-section {
@@ -43,6 +55,13 @@ ul li {
     background-color: #cd3d0f;
 }
 
+/* Game Cover Section */
+.game-cover-section .ms-card {
+    border: solid;
+}
+
+/* Playstation accessories section */
+
 /* It-Takes-Two-Section */
 .it-takes-two-section {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
@@ -53,6 +72,12 @@ ul li {
 
 .takes-two-cover {
     max-width: 50%;
+}
+
+/* Latest Releases Section */
+.latest-releases .ms-card .img-content {
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 /* Playstation Plus Section */

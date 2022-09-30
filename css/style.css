@@ -30,7 +30,9 @@ ul li {
 /* HEADER */
 /* Header Top Section */
 .header-top {
+    text-align: right;
     height: 40px;
+    padding: .3rem 0 0;
     background-color: black;
 }
 
@@ -41,37 +43,106 @@ ul li {
 /* Header Bot Section */
 .header-bottom .nav-link {
     color: black;
+    position: relative;
 }
+
+.ms-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ms-nested-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+.ms-nested-menu .ms-card {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.nav-item:hover .ms-nested-menu {
+    display: block;
+}
+
+.links li {
+    padding-left: .5rem;
+}
+
+/* .ms-menu:hover .ms-card {
+    display: flex;
+} */
+
+
+
+
 
 /* Jumbotron Section */
 .jumbotron-section {
     background-image: url(../img/jumbo-bg.png);
-    height: 650px;
+    min-height: 650px;
     background-position: center;
     background-size: cover;
+    margin-top: 6.5rem;
 }
 
 .ms-buy-now {
     background-color: #cd3d0f;
 }
 
+.jumbotron-section .ms-buy-now:hover {
+    background-color: #993513;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
 /* Game Cover Section */
-.game-cover-section .ms-card {
+.game-cover-section .selected {
     border: solid;
 }
 
+.game-cover-section .ms-card {
+    transition: transform 1s;
+}
+
+.game-cover-section .ms-card:hover {
+    transform: translateY(20px);
+}
+
 /* Playstation accessories section */
+.active:hover {
+    border-bottom: 1px solid #247cfd;
+    opacity: 1;
+}
+
 
 /* It-Takes-Two-Section */
 .it-takes-two-section {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    height: 500px;
+    min-height: 500px;
     background-position: center;
     background-size: cover;
 }
 
 .takes-two-cover {
     max-width: 50%;
+}
+
+.ms-buy-now {
+    background-color: #cd3d0f;
+}
+
+.it-takes-two-section .ms-buy-now:hover {
+    background-color: #993513;
+    border-radius: 30px;
 }
 
 /* Latest Releases Section */
@@ -111,4 +182,12 @@ footer {
 /* Footer Bottom Section */
 .footer-img {
     max-width: 20%;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    .ms-container-small {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
